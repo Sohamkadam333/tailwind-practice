@@ -1,0 +1,19 @@
+{
+	"name": "04-tailwind-css-food-web",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build-css": "npx tailwindcss -i ./src/styles/style.css -o ./public/styles/style.css --watch"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"tailwindcss": "^3.0.23"
+	},
+	"dependencies": {
+		"nodemon": "^2.0.15"
+	}
+}

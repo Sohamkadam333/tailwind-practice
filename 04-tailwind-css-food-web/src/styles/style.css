@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+.card {
+	@apply bg-white rounded overflow-hidden shadow-md relative cursor-pointer hover:shadow-orange-200;
+}
+
+.badge {
+	@apply absolute z-10 bg-secondary-100 text-secondary-200 top-3 left-3 rounded-full flex flex-row items-center justify-center p-1;
+}
+
+.btn {
+	@apply rounded-full py-2 px-4 uppercase text-xs font-bold cursor-pointer tracking-wider;
+}
+
+.link {
+	@apply flex flex-row justify-start items-center w-28 h-10;
+}

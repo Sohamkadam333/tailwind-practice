@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>PizzA</title>
+		<link rel="stylesheet" href="./styles/style.css" />
+	</head>
+	<body class="text-gray-600 font-poppins">
+		<!--wrapper-->
+		<div class="lg:grid lg:grid-cols-3">
+			<div class="col-span-full lg:col-span-1 md:flex md:flex-row md:justify-between lg:justify-end w-80">
+				<nav class="text-right md:flex md:justify-between md:flex-row lg:flex-none lg:flex-col">
+					<div class="flex items-center justify-between px-5">
+						<h1
+							class="font-bold uppercase p-4 border-b border-gray-100 sm:text-2xl md:text-3xl lg:text-4xl hover:text-gray-700"
+						>
+							<a href="/">Food Mania</a>
+						</h1>
+						<div id="menu" class="md:hidden cursor-pointer px-3">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="h-6 w-6"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+							</svg>
+						</div>
+					</div>
+					<ul class="md:flex md:flex-row lg:flex-col lg:items-end py-2 w-32 md:w-full">
+						<li class="text-gray-700 font-bold my-2 mr-3 border-r-4 border-primary">
+							<a href="#" class="link">
+								<svg xmlns="http://www.w3.org/2000/svg" class="mx-2 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+									<path
+										d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
+									/>
+								</svg>
+								<span class="">Home</span>
+							</a>
+						</li>
+						<li class="my-2 mr-3 border-r-4 border-transparent">
+							<a href="#" class="link">
+								<svg xmlns="http://www.w3.org/2000/svg" class="mx-2 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+									<path
+										fill-rule="evenodd"
+										d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+										clip-rule="evenodd"
+									/>
+								</svg>
+								<span class="">About</span>
+							</a>
+						</li>
+						<li class="my-2 mr-3 border-r-4 border-transparent">
+							<a href="#" class="link">
+								<svg xmlns="http://www.w3.org/2000/svg" class="mx-2 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+									<path
+										d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+									/>
+								</svg>
+								<span class="">Contact</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- end nav -->
+
+			<main class="px-6 py-6 md:px-10 md:py-10 lg:px-16 pb-2 bg-light_bg lg:col-span-2">
+				<div class="flex justify-center md:justify-end align-middle">
+					<a
+						class="text-primary mx-3 btn border-2 border-transparent md:border-2 md:border-primary md:hover:bg-primary md:hover:text-white"
+						href="#"
+						>Log in</a
+					>
+					<a
+						class="text-primary mx-3 btn border-2 border-transparent md:border-2 md:border-primary md:hover:bg-primary md:hover:text-white"
+						href="#"
+						>Sign up</a
+					>
+				</div>
+				<header>
+					<h2 class="text-gray-700 text-6xl font-semibold py-6">Recipes</h2>
+					<h3 class="text-2xl font-semibold">For Master Chefs</h3>
+				</header>
+
+				<div>
+					<h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
+					<div class="mt-8 grid gap-7 sm:grid-cols-2 md:grid-cols-2 md:gap-4 lg:grid-cols-3 lg:gap-4">
+						<!-- card go here 1 -->
+						<div class="card">
+							<img class="w-full h-40 md:h-48" src="./img/ivan-torres-MQUqbmszGGM-unsplash.jpg" alt="food image" />
+							<div class="m-4 px-2">
+								<span class="font-bold">Peppy Paneer</span>
+								<br />
+								<span class="py-2 text-gray-500 text-xs">Recipe by Smith</span>
+							</div>
+							<!-- badge goes here -->
+							<div class="badge">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="h-6 w-6"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+									stroke-width="2"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+									/>
+								</svg>
+								<span class="p-1 text-xs uppercase font-bold">29 mins</span>
+							</div>
+						</div>
+						<!-- card go here 2 -->
+						<div class="card">
+							<img
+								class="w-full h-40 md:h-48 object-cover"
+								src="./img/faizan-saeed-mwYTNZO0WhA-unsplash.jpg"
+								alt="food image"
+							/>
+							<div class="m-4 px-2">
+								<span class="font-bold">Double Cheese Margherita.</span>
+								<br />
+								<span class="py-2 text-gray-500 text-xs">Recipe by John</span>
+							</div>
+							<!-- badge goes here -->
+							<div class="badge">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="h-6 w-6"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+									stroke-width="2"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+									/>
+								</svg>
+								<span class="p-1 text-xs uppercase font-bold">35 mins</span>
+							</div>
+						</div>
+						<!-- card go here 3 -->
+						<div class="card">
+							<img
+								class="w-full h-40 md:h-48"
+								src="./img/vitalii-chernopyskyi-Oxb84ENcFfU-unsplash.jpg"
+								alt="food image"
+							/>
+							<div class="m-4 px-2">
+								<span class="font-bold">Farm House</span>
+								<br />
+								<span class="py-2 text-gray-500 text-xs">Recipe by Mike</span>
+							</div>
+							<!-- badge goes here -->
+							<div class="badge">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="h-6 w-6"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+									stroke-width="2"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+									/>
+								</svg>
+								<span class="p-1 text-xs uppercase font-bold">21 mins</span>
+							</div>
+						</div>
+						<!-- card go here 4 -->
+						<div class="card">
+							<img class="w-full h-40 md:h-48" src="./img/ivan-torres-MQUqbmszGGM-unsplash.jpg" alt="food image" />
+							<div class="m-4 px-2">
+								<span class="font-bold"> Tomato Pizza </span>
+								<br />
+								<span class="py-2 text-gray-500 text-xs">Recipe by Mike</span>
+							</div>
+							<!-- badge goes here -->
+							<div class="badge">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="h-6 w-6"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+									stroke-width="2"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+									/>
+								</svg>
+								<span class="p-1 text-xs uppercase font-bold">28 mins</span>
+							</div>
+						</div>
+					</div>
+					<h4 class="font-bold mt-12 border-b pb-2 border-gray-200">Most Popular Recipes</h4>
+					<div class="mt-8">
+						<!-- cards go here -->
+						<div>
+							<div class="bg-secondary-100 text-secondary-200">Load more</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+	</body>
+</html>

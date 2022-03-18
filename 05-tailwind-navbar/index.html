@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Responsive Navbar</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body class="text-gray-600 overflow-x-hidden">
+		<div class="flex flex-col">
+			<!-- nav -->
+			<nav class="flex justify-between items-center px-6 py-3 bg-gray-100 sticky top-0">
+				<!-- logo -->
+				<div>
+					<h1 class="text-4xl font-bold md:text-6xl cursor-pointer hover:text-gray-700">
+						<a href="#" class="px-4 py-2">Logo</a>
+					</h1>
+				</div>
+				<!-- nav links -->
+				<ul class="hidden md:flex">
+					<!-- nav link -->
+					<li class="mx-3 text-lg font-bold px-4 py-2"><a href="#">Home</a></li>
+					<li class="mx-3 text-lg px-4 py-2"><a href="#">About</a></li>
+					<li class="mx-3 text-lg px-4 py-2"><a href="#">Contact</a></li>
+				</ul>
+
+				<!-- mobile nav -->
+				<div id="mobile_nav" class="md:hidden flex flex-col relative overflow-x-hidden">
+					<div id="mobile_nav_button">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							id="open_btn"
+							class="h-6 w-6 cursor-pointer"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+							stroke-width="2"
+						>
+							<path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+						</svg>
+
+						<!-- close mobile nav -->
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							id="close_btn"
+							class="h-6 w-6 cursor-pointer hidden"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+							stroke-width="2"
+						>
+							<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+						</svg>
+					</div>
+				</div>
+				<div
+					id="mobile_nav_links_container"
+					class="bg-white absolute top-16 left-0 w-screen md:hidden flex justify-end items-center hidden"
+				>
+					<ul id="mobile_nav_links" class="flex flex-col items-end mr-8 w-full">
+						<li class="my-5">
+							<a href="#" class="flex justify-between items-center px-4 py-2">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+									<path
+										d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
+									/>
+								</svg>
+								<span class="pl-2">Home</span></a
+							>
+						</li>
+						<li class="my-5">
+							<a href="#" class="flex justify-between items-center px-4 py-2">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="h-6 w-6"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+									stroke-width="2"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+									/>
+								</svg>
+
+								<span class="pl-2">About</span></a
+							>
+						</li>
+						<li class="my-5">
+							<a href="#" class="flex justify-between items-center px-4 py-2">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="h-6 w-6"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+									stroke-width="2"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+									/>
+								</svg>
+								<span class="pl-2">Contact</span></a
+							>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!-- main content -->
+			<main class="bg-emerald-200 flex justify-center items-center h-screen">
+				<!-- section 1 -->
+				<section class="flex justify-center items-center">
+					<h1 class="text-6xl">Main Content</h1>
+				</section>
+			</main>
+		</div>
+
+		<script src="./script.js"></script>
+	</body>
+</html>
